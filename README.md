@@ -57,3 +57,6 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
 <img src="images/motor_read_all_api_link.PNG" style="width:20px;height:20px;">
 <img src="images/weather_insert_api_link.PNG" style="width:20px;height:20px;">
 <img src="images/weather_read_all_api_link.PNG" style="width:20px;height:20px;">
+
+<h2>Connections for Nodemcu and Sensors</h2>
+<p>According your requirement you can change pins in nodemcu(WiFiModule ESP8266)</p>
