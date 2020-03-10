@@ -34,6 +34,7 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
   <li>DHT11</li>
   <li>Soil Moisture Meter</li>
   <li>Relay</li>  
+  <li>Database</li>
   <li>Android appliction</li>
   <li>Water motor</li>
 </ul>
