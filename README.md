@@ -48,5 +48,5 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
 <img src="images/weather.PNG" style="width:20px;height:20px;">
 
 <h2>Uploading Php api files into file directorty in server</h2>
-<p>Create two folders one for motor_table and another for weather table</p>
+<p>Create two folders one for motor_table and another for weather table and then upload api files.</p>
 
