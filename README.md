@@ -240,3 +240,147 @@ Serial.println(str2);
 </div>
 <p>I am using two different hosts one is "000webhost.com" and another one is "script.google.com"
 if you would like to use same host you can choose either one that is "000webhost.com" or "script.google.com"</p>
+
+<h2>Android App Source Code</h2>
+<p>Open android studio and copy below code to android studio or you can open project file by downloading project files from this github space</p>
+<h3>MainActivity.java</h3>
+<div>
+<pre>
+package com.example.myapplication;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+import android.app.DownloadManager;
+import android.graphics.Color;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import java.util.Locale;
+import me.itangqi.waveloadingview.WaveLoadingView;
+public class MainActivity extends AppCompatActivity {
+
+   WaveLoadingView waveLoadingView;
+   Button ofButton;
+   private static final long START_TIME_IN_MILLIS = 10000000;
+   private CountDownTimer mCountDownTimer;
+   private boolean mTimerRunning;
+   private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
+   TextView textView,textView1;
+   @Override
+
+protected void onCreate(Bundle savedInstanceState) {
+       super.onCreate(savedInstanceState);
+       setContentView(R.layout.activity_main);
+
+       waveLoadingView=findViewById(R.id.waveLodingView);
+       waveLoadingView.setProgressValue(0);
+       textView=(TextView)findViewById(R.id.temp);
+       textView1=(TextView)findViewById(R.id.mois);
+       ofButton=(Button)findViewById(R.id.button);
+
+       startTimer();
+       updateCountDownText();
+   }
+
+   public void jsonAndWater(){
+       RequestQueue requestQueue;
+       requestQueue= Volley.newRequestQueue(this);
+       JsonObjectRequest jsonObjectRequest=new JsonObjectRequest(Request.Method.GET, "https://iotpolarao.000webhostapp.com/weather/read_all.php", null, new Response.Listener<JSONObject>() {
+           @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+           @Override
+           public void onResponse(JSONObject response) {
+               JSONArray jsonArray=response.optJSONArray("weather");
+               JSONObject jsonObject=jsonArray.optJSONObject(0);
+               String moistures=jsonObject.optString("mois");
+               String temp=jsonObject.optString("temp");
+               int moisturei=Integer.parseInt(moistures);
+               waveLoadingView.setProgressValue(moisturei);
+               textView.setText(temp);
+
+               textView1.setText(moistures+"%");
+           }
+
+       }, new Response.ErrorListener() {
+           @Override
+           public void onErrorResponse(VolleyError error) {
+               Log.d("myapp","wrong");
+           }
+       });
+       requestQueue.add(jsonObjectRequest);
+   }
+   private void startTimer() {
+       mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
+           @Override
+           public void onTick(long millisUntilFinished) {
+               mTimeLeftInMillis = millisUntilFinished;
+               updateCountDownText();
+           }
+
+           @Override
+           public void onFinish() {
+               mTimerRunning = false;
+
+           }
+       }.start();
+
+       mTimerRunning = true;
+
+   }
+   private void updateCountDownText() {
+       int minutes = (int) (mTimeLeftInMillis / 1000) / 60;
+       int seconds = (int) (mTimeLeftInMillis / 1000) % 60;
+       String timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
+       jsonAndWater();
+
+   }
+
+   public void motorControl(View view) {
+       RequestQueue requestQueue;
+       requestQueue= Volley.newRequestQueue(this);
+       String s=null;
+       String bs=ofButton.getText().toString();
+       if(bs.equals("on")){
+           ofButton.setText("off");
+           ofButton.setBackgroundColor(Color.parseColor("#FB1515"));
+           s="on";
+       }else if(bs.equals("off")){
+           ofButton.setText("on");
+           ofButton.setBackgroundColor(Color.parseColor("#20F610"));
+           s="off";
+       }
+       String url="https://script.google.com/macros/s/AKfycbxupQvf7Q_TfuN2ITE4en0cjfv1nzRtNDJ5rCFBjzOKPfaDmXw/exec?callback=ctrlq&status="+s+"&id=1&action=update";
+       StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+               new Response.Listener<String>() {
+                   @Override
+                   public void onResponse(String response) {
+                       // Display the first 500 characters of the response string.
+                       Toast.makeText(MainActivity.this,response,Toast.LENGTH_LONG).show();
+                   }
+               }, new Response.ErrorListener() {
+           @Override
+           public void onErrorResponse(VolleyError error) {
+               Toast.makeText(MainActivity.this,"failed",Toast.LENGTH_LONG).show();
+           }
+       });
+// Add the request to the RequestQueue.
+       requestQueue.add(stringRequest);
+
+   }
+}
+</pre>
+</div>
