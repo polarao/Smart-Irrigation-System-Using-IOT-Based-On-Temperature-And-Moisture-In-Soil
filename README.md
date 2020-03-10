@@ -46,3 +46,7 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
 <h3>Weather Table</h3>
 <p>weather table with id, temp, hum and mois attributes</p>
 <img src="images/weather.PNG" style="width:20px;height:20px;">
+
+<h2>Uploading Php api files into file directorty in server</h2>
+<p>Create two folders one for motor_table and another for weather table</p>
+
