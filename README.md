@@ -245,7 +245,7 @@ if you would like to use same host you can choose either one that is "000webhost
 <p>Open android studio and copy below code to android studio or you can open project file by downloading project files from this github space</p>
 <h3>AndroidManifest.xml</h3>
 <div>
-<pre>
+
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
    package="com.example.myapplication">
@@ -265,11 +265,10 @@ if you would like to use same host you can choose either one that is "000webhost
        </activity>
    </application>
 </manifest>
-</pre>
+
 </div>
 <p>In manifest file we have to give internet permission by typing
 <uses-permission android:name="android.permission.INTERNET"></uses-permission></p>
-
 <h3>MainActivity.java</h3>
 <div>
 <pre>
