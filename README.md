@@ -5,7 +5,7 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
 <p>	 In this system, based on the soil and environment conditions, the water will be provided to the agricultural field. In agriculture, there are two things, namely, the moisture content of the soil as well as environment temperature. </p>
 
 <h2>Diagram</h2>
-<img src="images/diagram.jpg" style="width:20px;height:20px;">
+<img src="images/diagram.jpg" style="width:20px;height:20px;" id="psystem">
 
 
 <h2>Abstract</h2>
@@ -20,4 +20,10 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
 </p>
 
 <img src="images/automatic.jpg" style="width:20px;height:20px;">
+
 <h2>Proposed System</h2>
+<h3><a href="#psystem">Smart-Irrigation-System-Using-IOT-Based-On-Temperature-And-Moisture-In-Soil</a></h3>
+<p> (1)With the help of this project the soil moisture and temperature can be monitored from anywhere around the world with the help of  mobile application. 
+  
+(2)Based on moisture content in the soil we can on or off the water pumping manually using android app.
+</p>
