@@ -10,3 +10,12 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
 
 <h2>Abstract</h2>
 <p> In the agriculture field, sensors are used like soil moisture and temperature. The information received from the sensors is sent to the Database folder through the Nodemcu(ESP8266). In the control section, the system is activated using the android application, this is finished using the ON/OFF buttons in the application.the appliction provide a facility to human intraction in the form of button for controlling motor in croft.</p>
+
+<h2>Existing System</h2>
+<p color="red">Automatic Plant Watering System Using Arduino Uno</p>
+<p>  (1)In this system, soil moisture sensor senses the moisture level of the soil. <br/>
+  (2)If soil will get dry then sensor senses low moisture level and automatically switches on the water pump to supply water to the plant.<br/>
+ (3)As plant get sufficient water and soil get wet then sensor senses enough moisture in soil. After which the water pump will automatically get stopped.<br/>
+</p>
+<img src="images/diagram.jpg" style="width:20px;height:20px;">
+<h2>Proposed System</h2>
