@@ -41,6 +41,8 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
 
 <h2>Database Tables</h2>
 <h3>Motor Table</h3>
-<img src="images/motor.jpg" style="width:20px;height:20px;">
+<p>motor_table with two attributes id and status</p>
+<img src="images/motor.PNG" style="width:20px;height:20px;">
 <h3>Weather Table</h3>
-<img src="images/weather.jpg" style="width:20px;height:20px;">
+<p>weather table with id, temp, hum and mois attributes</p>
+<img src="images/weather.PNG" style="width:20px;height:20px;">
