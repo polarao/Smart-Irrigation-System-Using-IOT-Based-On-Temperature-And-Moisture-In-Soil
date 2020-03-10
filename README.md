@@ -51,3 +51,6 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
 <p>Create two folders one for motor_table and another for weather table and then upload api files.</p>
 <img src="images/motor_api_files.PNG" style="width:20px;height:20px;">
 <img src="images/weather_api_files.PNG" style="width:20px;height:20px;">
+
+<h3>Copy APIs links of weather and motor php files</h3>
+
