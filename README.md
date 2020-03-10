@@ -260,19 +260,15 @@ if you would like to use same host you can choose either one that is "000webhost
        <activity android:name=".MainActivity">
            <intent-filter>
                <action android:name="android.intent.action.MAIN" />
-
                <category android:name="android.intent.category.LAUNCHER" />
            </intent-filter>
        </activity>
    </application>
-
 </manifest>
-
 </pre>
 </div>
 <p>In manifest file we have to give internet permission by typing
-<uses-permission android:name="android.permission.INTERNET"></uses-permission>
-</p>
+<uses-permission android:name="android.permission.INTERNET"></uses-permission></p>
 
 <h3>MainActivity.java</h3>
 <div>
@@ -317,14 +313,12 @@ public class MainActivity extends AppCompatActivity {
 protected void onCreate(Bundle savedInstanceState) {
        super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_main);
-
        waveLoadingView=findViewById(R.id.waveLodingView);
        waveLoadingView.setProgressValue(0);
        textView=(TextView)findViewById(R.id.temp);
        textView1=(TextView)findViewById(R.id.mois);
        ofButton=(Button)findViewById(R.id.button);
-
-       startTimer();
+        startTimer();
        updateCountDownText();
    }
 
@@ -342,10 +336,8 @@ protected void onCreate(Bundle savedInstanceState) {
                int moisturei=Integer.parseInt(moistures);
                waveLoadingView.setProgressValue(moisturei);
                textView.setText(temp);
-
                textView1.setText(moistures+"%");
            }
-
        }, new Response.ErrorListener() {
            @Override
            public void onErrorResponse(VolleyError error) {
@@ -361,14 +353,11 @@ protected void onCreate(Bundle savedInstanceState) {
                mTimeLeftInMillis = millisUntilFinished;
                updateCountDownText();
            }
-
            @Override
            public void onFinish() {
                mTimerRunning = false;
-
            }
        }.start();
-
        mTimerRunning = true;
 
    }
