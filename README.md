@@ -62,6 +62,7 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
 <p>According to your requirement you can change pins in nodemcu(WiFiModule ESP8266)</p>
 
 <h2>Arduino Programming</h2>
+<img src="images/arduino_code.PNG" style="width:20px;height:20px;">
 <div>
   <pre>
   /*
