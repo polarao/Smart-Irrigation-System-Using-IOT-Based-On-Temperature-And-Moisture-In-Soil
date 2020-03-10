@@ -27,3 +27,13 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
   
 (2)Based on moisture content in the soil we can on or off the water pumping manually using android app.
 </p>
+
+<h2>Requirements</h2>
+<ul>
+  <li>Nodemcu (WiFiModule ESP8266)</li>
+  <li>DHT11</li>
+  <li>Soil Moisture Meter</li>
+  <li>Relay</li>  
+  <li>Android appliction</li>
+  <li>Water motor</li>
+</ul>
