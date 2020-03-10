@@ -39,3 +39,8 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
   <li>Water motor</li>
 </ul>
 
+<h2>Database Tables</h2>
+<h3>Motor Table</h3>
+<img src="images/motor.jpg" style="width:20px;height:20px;">
+<h3>Weather Table</h3>
+<img src="images/weather.jpg" style="width:20px;height:20px;">
