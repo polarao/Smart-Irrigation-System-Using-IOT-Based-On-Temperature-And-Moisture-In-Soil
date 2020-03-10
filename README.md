@@ -13,9 +13,11 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
 
 <h2>Existing System</h2>
 <p color="red">Automatic Plant Watering System Using Arduino Uno</p>
+<img src="images/diagram2.jpg" style="width:20px;height:20px;">
 <p>  (1)In this system, soil moisture sensor senses the moisture level of the soil. <br/>
   (2)If soil will get dry then sensor senses low moisture level and automatically switches on the water pump to supply water to the plant.<br/>
  (3)As plant get sufficient water and soil get wet then sensor senses enough moisture in soil. After which the water pump will automatically get stopped.<br/>
 </p>
-<img src="images/diagram.jpg" style="width:20px;height:20px;">
+
+<img src="images/automatic.jpg" style="width:20px;height:20px;">
 <h2>Proposed System</h2>
