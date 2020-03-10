@@ -53,4 +53,4 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
 <img src="images/weather_api_files.PNG" style="width:20px;height:20px;">
 
 <h3>Copy APIs links of weather and motor php files</h3>
-
+<img src="images/" style="width:20px;height:20px;">
