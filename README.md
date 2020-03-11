@@ -271,6 +271,15 @@ if you would like to use same host you can choose either one that is "000webhost
 </div>
 <p>In manifest file we have to give internet permission by typing
 &lt;uses-permission android:name="android.permission.INTERNET"&gt;&lt;/uses-permission&gt;</p>
+
+<h2>app</h2>
+<div>
+<pre>
+
+</pre>
+</div>
+<p>In app xml file in android studio </p>
+
 <h3>MainActivity.java</h3>
 <div>
 <pre>
