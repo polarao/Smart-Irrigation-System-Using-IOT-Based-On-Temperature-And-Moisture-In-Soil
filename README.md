@@ -275,10 +275,44 @@ if you would like to use same host you can choose either one that is "000webhost
 <h2>app</h2>
 <div>
 <pre>
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.example.myapplication"
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'me.itangqi.waveloadingview:library:0.3.5'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
 
 </pre>
 </div>
-<p>In app xml file in android studio </p>
+<p>In android studio in app we have to specify the depenencies 
+implementation 'me.itangqi.waveloadingview:library:0.3.5'<br/>
+    implementation 'com.android.volley:volley:1.1.1'
+</p>
 
 <h3>MainActivity.java</h3>
 <div>
