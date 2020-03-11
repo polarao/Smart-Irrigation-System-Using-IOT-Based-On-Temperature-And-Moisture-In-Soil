@@ -68,7 +68,10 @@ DHT11 signal terminal connect to Nodemcu D3/0 pin
 Moisture sensor GND terminal connect to Nodemcu GND pin
 Moisture sensor VCC terminal connect to Nodemcu 3v pin
 Moisture sensor A0 terminal connect to Nodemcu A0 analog pin
-<h3></h3>
+<h3>Connections between Nodemcu and Relay</h3>
+Realy +terminal connect to 3v pin of Nodemcu
+Realy -terminal connect to GND pin of Nodemcu
+Realy signal terminal connect to D1 pin in Nodemcu
 <h2>Arduino Programming</h2>
 <img src="images/arduino_code.PNG" style="width:20px;height:20px;">
 <div>
