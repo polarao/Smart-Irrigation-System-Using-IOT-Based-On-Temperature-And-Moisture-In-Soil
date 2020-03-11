@@ -247,30 +247,30 @@ if you would like to use same host you can choose either one that is "000webhost
 <div>
 <pre>
 
-&lt?xml version="1.0" encoding="utf-8"?&gt
-&ltmanifest xmlns:android="http://schemas.android.com/apk/res/android"
-   package="com.example.myapplication"&gt
-&ltuses-permission android:name="android.permission.INTERNET"&gt&lt/uses-permission&gt
-   &ltapplication
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+   package="com.example.myapplication"&gt;
+&lt;uses-permission android:name="android.permission.INTERNET"&gt&lt/uses-permission&gt;
+   &lt;application
        android:allowBackup="true"
        android:icon="@mipmap/ic_launcher"
        android:label="@string/app_name"
        android:roundIcon="@mipmap/ic_launcher_round"
        android:supportsRtl="true"
-       android:theme="@style/AppTheme"&gt
-       &ltactivity android:name=".MainActivity"&gt
-           &ltintent-filter&gt
-               &ltaction android:name="android.intent.action.MAIN" /&gt
-               &ltcategory android:name="android.intent.category.LAUNCHER" /&gt
-           &lt/intent-filter&gt
-       &lt/activity&gt
-   &lt/application&gt
-&lt/manifest&gt
+       android:theme="@style/AppTheme"&gt;
+       &lt;activity android:name=".MainActivity"&gt;
+           &l;tintent-filter&gt;
+               &lt;action android:name="android.intent.action.MAIN" /&gt;
+               &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
+           &lt;/intent-filter&gt;
+       &lt;/activity&gt;
+   &lt;/application&gt;
+&lt;/manifest&gt;
 
 </pre>
 </div>
 <p>In manifest file we have to give internet permission by typing
-<uses-permission android:name="android.permission.INTERNET"></uses-permission></p>
+&lt;uses-permission android:name="android.permission.INTERNET"&gt;&lt;/uses-permission&gt;</p>
 <h3>MainActivity.java</h3>
 <div>
 <pre>
