@@ -309,7 +309,7 @@ dependencies {
 
 </pre>
 </div>
-<p>In android studio in app we have to specify the depenencies 
+<p>In android studio in app we have to specify the depenencies </br>
 implementation 'me.itangqi.waveloadingview:library:0.3.5'<br/>
     implementation 'com.android.volley:volley:1.1.1'
 </p>
