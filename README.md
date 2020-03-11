@@ -242,7 +242,7 @@ Serial.println(str2);
 if you would like to use same host you can choose either one that is "000webhost.com" or "script.google.com"</p>
 
 <h2>Android App Source Code</h2>
-<p>Open android studio and copy below code to android studio or you can open project file by downloading project files from this github space</p>
+<p>Open android studio and copy below code to android studio or you can directly open project files in android studio by downloading project zip file MyApplication2.zip</p>
 <h3>AndroidManifest.xml</h3>
 <div>
 <pre>
