@@ -58,22 +58,22 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
 <img src="images/weather_insert_api_link.PNG" style="width:20px;height:20px;">
 <img src="images/weather_read_all_api_link.PNG" style="width:20px;height:20px;">
 
-<h2>Connections for Nodemcu and Sensors</h2>
-<p>According to your requirement you can change pins in nodemcu(WiFiModule ESP8266)</p>
-<h3>Connections between Nodemcu and DHT11</h3>
-DHT11 +terminal connect to Nodemcu 3v pin
-DHT11 -terminal connect to Nodemcu GND pin
-DHT11 signal terminal connect to Nodemcu D3/0 pin
-<h3>Connections between Nodemcu and Moisture sensor</h3>
-Moisture sensor GND terminal connect to Nodemcu GND pin
-Moisture sensor VCC terminal connect to Nodemcu 3v pin
-Moisture sensor A0 terminal connect to Nodemcu A0 analog pin
-<h3>Connections between Nodemcu and Relay</h3>
-Realy +terminal connect to 3v pin of Nodemcu
-Realy -terminal connect to GND pin of Nodemcu
-Realy signal terminal connect to D1 pin in Nodemcu
-<h2>Arduino Programming</h2>
-<img src="images/arduino_code.PNG" style="width:20px;height:20px;">
+<h2>Connections for Nodemcu and Sensors</h2><br/>
+<p>According to your requirement you can change pins in nodemcu(WiFiModule ESP8266)</p><br/>
+<h3>Connections between Nodemcu and DHT11</h3><br/>
+DHT11 +terminal connect to Nodemcu 3v pin<br/>
+DHT11 -terminal connect to Nodemcu GND pin<br/>
+DHT11 signal terminal connect to Nodemcu D3/0 pin<br/>
+<h3>Connections between Nodemcu and Moisture sensor</h3><br/>
+Moisture sensor GND terminal connect to Nodemcu GND pin<br/>
+Moisture sensor VCC terminal connect to Nodemcu 3v pin<br/>
+Moisture sensor A0 terminal connect to Nodemcu A0 analog pin<br/>
+<h3>Connections between Nodemcu and Relay</h3><br/>
+Realy +terminal connect to 3v pin of Nodemcu<br/>
+Realy -terminal connect to GND pin of Nodemcu<br/>
+Realy signal terminal connect to D1 pin in Nodemcu<br/>
+<h2>Arduino Programming</h2><br/>
+<img src="images/arduino_code.PNG" style="width:20px;height:20px;"><br/>
 <div>
   <pre>
   /*
