@@ -60,7 +60,15 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
 
 <h2>Connections for Nodemcu and Sensors</h2>
 <p>According to your requirement you can change pins in nodemcu(WiFiModule ESP8266)</p>
-
+<h3>Connections between Nodemcu and DHT11</h3>
+DHT11 +terminal connect to Nodemcu 3v pin
+DHT11 -terminal connect to Nodemcu GND pin
+DHT11 signal terminal connect to Nodemcu D3/0 pin
+<h3>Connections between Nodemcu and Moisture sensor</h3>
+Moisture sensor GND terminal connect to Nodemcu GND pin
+Moisture sensor VCC terminal connect to Nodemcu 3v pin
+Moisture sensor A0 terminal connect to Nodemcu A0 analog pin
+<h3></h3>
 <h2>Arduino Programming</h2>
 <img src="images/arduino_code.PNG" style="width:20px;height:20px;">
 <div>
@@ -98,7 +106,7 @@ uint8_t M_Pin = D1;//5
 
 String url2;
 
-int sense_Pin = 16;//D0
+int sense_Pin = A0;
 int mois = 1;
 
 
