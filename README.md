@@ -69,21 +69,36 @@ Monitoring moisture content and temperature and control water pump(on/off) in an
  * --polarao-----
  * ---smart irrigation system using IOT based temperature and moisture in soil----
  */
+/*
+ * --polarao-----
+ * ---smart irrigation system using IOT based temperature and moisture in soil----
+ * static const uint8_t D0   = 16;
+static const uint8_t D1   = 5;
+static const uint8_t D2   = 4;
+static const uint8_t D3   = 0;
+static const uint8_t D4   = 2;
+static const uint8_t D5   = 14;
+static const uint8_t D6   = 12;
+static const uint8_t D7   = 13;
+static const uint8_t D8   = 15;
+static const uint8_t D9   = 3;
+static const uint8_t D10  = 1;
+ */
 #include "DHT.h"        // including the library of DHT11 temperature and humidity sensor
 #define DHTTYPE DHT11   // DHT 11
 #include <ESP8266WiFi.h>
 #include <ArduinoJson.h>
 #include "HTTPSRedirect.h"
-#define dht_dpin 0
+#define dht_dpin 0//D3
 const char* ssid     = "Pola";
 const char* password = "Pola@1234";
 const char* host = "iotpolarao.000webhostapp.com";
 DHT dht(dht_dpin, DHTTYPE); 
-uint8_t M_Pin = D1;
+uint8_t M_Pin = D1;//5
 
 String url2;
 
-int sense_Pin = 0;
+int sense_Pin = 16;//D0
 int mois = 1;
 
 
@@ -185,15 +200,6 @@ void loop() {
   Serial.println("closing connection");
 
   //post data to server end
-
-
-
-
-
-
-
-
-  
   //start get motor data
  
 
