@@ -247,25 +247,25 @@ if you would like to use same host you can choose either one that is "000webhost
 <div>
 <pre>
 
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-   package="com.example.myapplication">
-<uses-permission android:name="android.permission.INTERNET"></uses-permission>
-   <application
+&lt?xml version="1.0" encoding="utf-8"?&gt
+&ltmanifest xmlns:android="http://schemas.android.com/apk/res/android"
+   package="com.example.myapplication"&gt
+&ltuses-permission android:name="android.permission.INTERNET"&gt&lt/uses-permission&gt
+   &ltapplication
        android:allowBackup="true"
        android:icon="@mipmap/ic_launcher"
        android:label="@string/app_name"
        android:roundIcon="@mipmap/ic_launcher_round"
        android:supportsRtl="true"
-       android:theme="@style/AppTheme">
-       <activity android:name=".MainActivity">
-           <intent-filter>
-               <action android:name="android.intent.action.MAIN" />
-               <category android:name="android.intent.category.LAUNCHER" />
-           </intent-filter>
-       </activity>
-   </application>
-</manifest>
+       android:theme="@style/AppTheme"&gt
+       &ltactivity android:name=".MainActivity"&gt
+           &ltintent-filter&gt
+               &ltaction android:name="android.intent.action.MAIN" /&gt
+               &ltcategory android:name="android.intent.category.LAUNCHER" /&gt
+           &lt/intent-filter&gt
+       &lt/activity&gt
+   &lt/application&gt
+&lt/manifest&gt
 
 </pre>
 </div>
